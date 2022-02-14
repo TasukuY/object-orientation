@@ -111,8 +111,14 @@ function greeting( obj ) {
 */
 
 //Code Here
+let object = {utah: 1, california: 2, texas: 3, arizona: 4};
 
+let totalPopulation = obj => {
+  let {utah, california, texas, arizona} = obj;
+  return utah + california + texas + arizona;
+}
 
+//console.log(totalPopulation(object));
 
 //////////////////////////// PROBLEM 9 ////////////////////////////
 
