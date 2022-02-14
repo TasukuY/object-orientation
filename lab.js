@@ -165,7 +165,11 @@ var user = {
 */
 
 //Code Here
-
+let newUser = Object.assign({}, user);
+newUser.name = 'Bryan G. Smith';
+newUser.email = 'bryan.smith@devmounta.in';
+// console.log(newUser);
+// console.log(user);
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
@@ -173,7 +177,8 @@ var user = {
 */
 
 //Code Here
-
+delete newUser.age;
+//console.log(newUser);
 
 //////////////////////////// PROBLEM 12 ////////////////////////////
 /*
