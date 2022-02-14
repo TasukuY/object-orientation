@@ -39,22 +39,28 @@ console.log(dog.color);
 */
 
 //Code here
-
+let favoriteThings = {band: 'Radwimps', food: 'Ramen', person: 'My wife', book: 'One Piece', movie: 'LOTR', holiday: "New Year's day"};
 
 /*
-  After you've made your object, use bracket or dot notation to add another key named 'car' with the value being your favorite car and then another key named 'show' with the value being your favorite show.
+  After you've made your object, 
+  use bracket or dot notation to add another key named 'car' with the value 
+  being your favorite car and then another key named 'show' with the value being your favorite show.
 */
 
 //Code here
-
+favoriteThings.car = 'Tesla CyberTruck';
+favoriteThings.show = 'Demon Slayer';
 
 /*
   Now use bracket or dot notation to change the value of the food key in your favoriteThings object to be 'Chicken Nuggets'
-  and change the value of the book key in your favoriteThings object to be 'Harry Potter'. (If they were either of those things already, change them to something else.)
+  and change the value of the book key in your favoriteThings object to be 'Harry Potter'. 
+  (If they were either of those things already, change them to something else.)
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harray Potter';
+console.log(favoriteThings);
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
