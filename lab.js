@@ -91,13 +91,14 @@ console.log(`color: ${color}, make: ${make}, model: ${model}, year: ${year}`);
 
 function greeting( obj ) {
   //Code Here
-  
+  let {firstName, lastName, title} = obj
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
 }
 
-
+// let obj = {firstName: 'Tasuku', lastName: 'Yamamoto', title: 'Mr. '}
+// console.log(greeting(obj));
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
 
