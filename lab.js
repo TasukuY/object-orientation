@@ -131,8 +131,20 @@ let totalPopulation = obj => {
 */
 
 //Code Here
+let p9Object = {carb: 'rice', fat: 'fish oil', protein: 'beef'};
 
+let ingredients = obj => {
+  let ingredientsArr = [];
+  let {carb, fat, protein} = obj;
 
+  ingredientsArr.push(carb);
+  ingredientsArr.push(fat);
+  ingredientsArr.push(protein);
+
+  return ingredientsArr;
+};
+
+console.log(ingredients(p9Object));
 
 //////////////////////////// PROBLEM 10 ////////////////////////////
 // Do not edit the code below.
