@@ -208,6 +208,22 @@ let cat = new Cat('cat', 1, 'brown');
 */
 
 //Code here
+class Wizard{
+
+  constructor(name, age, favoriteSpell){
+    this.name = name;
+    this.age = age;
+    this.favoriteSpell = favoriteSpell;
+  }
+
+  castSpell() {
+    console.log(`${this.name} has cast ${this.favoriteSpell}`);
+  }
+
+}
+
+let wizard = new Wizard('Gandalf', 24000,'Illumination');
+wizard.castSpell();
 
 //////////////////////////// PROBLEM 14 ////////////////////////////
 /*
