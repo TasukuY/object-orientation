@@ -371,14 +371,27 @@ const shippingInfo = {
 */
 
 //Code Here 
+class Vehicle{
+  constructor(capacity, color, mileage){
+    this.capacity = capacity;
+    this.color = color;
+    this.mileage = mileage;
+  }
 
+  move(miles){
+    this.mileage += miles
+    console.log(this.mileage);
+  }
+
+}
 
 /*
   Create a vehicle using your new class and save it to a variable called myFirstVehicle
 */
 
 //Code Here
-
+let myFirstVehicle = new Vehicle(5, 'black', 1000);
+//myFirstVehicle.move(100);
 
 /* 
   Now we'll create a class that's based off of the vehicle class. 
@@ -389,16 +402,25 @@ const shippingInfo = {
 */
 
 //Code Here
+class Motorcycle extends Vehicle{
+  constructor(capacity, color, mileage, make, isCool){
+    super(capacity, color, mileage);
+    this.make = make;
+    this.isCool = isCool;
+  }
+}
 
 /*
   Create a Motorcycle using your new class and save it to a variable called myFirstMotorcycle
 */
 
 //Code Here 
+let myFirstMotorcycle = new Motorcycle(1, 'gray', 5000, 'Honda', true);
 
 /*
   Call the move function on myFirstMotorcycle (don't forget the parameter)
 */
+myFirstMotorcycle.move(900);
 
 /*
   Let's make another class based off of Vehicle. 
@@ -417,6 +439,27 @@ const shippingInfo = {
 */
 
 //Code Here
+class Boat extends Vehicle{
+  constructor(capacity, color, mileage, name, type, isSeaworthy){
+    super(capacity, color, mileage);
+    this.name = name;
+    this.type = type;
+    this.isSeaworthy = isSeaworthy;
+  }
+
+  checkSwaworthiness(){
+    if(this.isSeaworthy){
+      console.log(`The ${color} ${this.type} ${this.name} is seaworthy!`);
+    }else{
+      console.log(`You need to get your ${this.type} in shape!`);
+    }
+  }
+
+  performMaintenance(){
+    this.isSeaworthy = true;
+  }
+
+}
 
 
 /*
@@ -425,21 +468,24 @@ const shippingInfo = {
 */
 
 //Code Here
+let myFirstBoat = new Boat(10, 'white', 3000, 'Going Merry', 'yacht', false);
 
 /*
   Call the checkSeaworthiness method on your new boat
 */
 
 //Code Here
-
+myFirstBoat.checkSwaworthiness();
 /*
   Now run the performMaintenance method on your boat
 */
 
 //Code Here 
+myFirstBoat.performMaintenance();
 
 /*
   Check the seaworthiness once more (you should be ready for the water!)
 */
 
 //Code Here
+console.log(myFirstBoat.isSeaworthy);
