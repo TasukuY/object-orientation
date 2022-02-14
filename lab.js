@@ -7,7 +7,7 @@
 //Code here
 
 let me = {name:'Yama', age:29};
-console.log(me);
+//console.log(me);
 
 //////////////////////////// PROBLEM 2 ////////////////////////////
 
@@ -18,7 +18,7 @@ console.log(me);
 
 //Code here
 let dog = {name: 'Zoe', color: 'Gray', age: 1, goodGirl: true};
-console.log(dog);
+//console.log(dog);
 
 //////////////////////////// PROBLEM 3 ////////////////////////////
 /* Print out the name of the dog you created in problem 2 using dot-notation. */
@@ -60,7 +60,7 @@ favoriteThings.show = 'Demon Slayer';
 //Code here
 favoriteThings.food = 'Chicken Nuggets';
 favoriteThings.book = 'Harray Potter';
-console.log(favoriteThings);
+//console.log(favoriteThings);
 
 //////////////////////////// PROBLEM 6 ////////////////////////////
 
@@ -78,8 +78,8 @@ var carDetails = {
 */
 
 //Code Here
-
-
+const {color, make, model, year} = carDetails;
+console.log(`color: ${color}, make: ${make}, model: ${model}, year: ${year}`);
 
 //////////////////////////// PROBLEM 7 ////////////////////////////
 
