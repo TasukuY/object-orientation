@@ -97,8 +97,8 @@ function greeting( obj ) {
   // Do not edit the code above.
 }
 
-// let obj = {firstName: 'Tasuku', lastName: 'Yamamoto', title: 'Mr. '}
-// console.log(greeting(obj));
+ let obj = {firstName: 'Tasuku', lastName: 'Yamamoto', title: 'Mr. '}
+ console.log(greeting(obj));
 
 //////////////////////////// PROBLEM 8 ////////////////////////////
 
@@ -146,7 +146,7 @@ let ingredients = obj => {
 
 console.log(ingredients(p9Object));
 
-//////////////////////////// PROBLEM 10 ////////////////////////////
+//////////////////////////// PROBLEM 10 ////////////////////////////   
 // Do not edit the code below.
 var user = {
   name: 'Bryan',
@@ -165,11 +165,11 @@ var user = {
 */
 
 //Code Here
-let newUser = Object.assign({}, user);
-newUser.name = 'Bryan G. Smith';
-newUser.email = 'bryan.smith@devmounta.in';
-// console.log(newUser);
-// console.log(user);
+
+user.name = 'Bryan G. Smith';
+user.email = 'bryan.smith@devmounta.in';
+
+console.log(user);
 
 //////////////////////////// PROBLEM 11 ////////////////////////////
 /*
